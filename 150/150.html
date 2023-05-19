@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:white">
+            <a-camera wasd-controls-enabled="true" position="0 8 20">
+
+            </a-camera>
+            <a-assets>
+                <a-asset-item id="satellite-obj" src="./models/satellite/tinker.obj">
+
+                </a-asset-item>
+                <a-asset-item id="satellite-mtl" src="./models/satellite/obj.mtl">
+
+                </a-asset-item>
+            </a-assets>
+            <a-sky src= "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80">
+
+            </a-sky>
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+                <a-entity obj-model="obj:#satellite-obj;mtl:#satellite-mtl" position="10 10 10" rotation="-9 0 0" scale="0.1 0.1 0.1">
+
+                </a-entity>
+                
+
+            </a-entity>
+           
+           
+        </a-scene>
+    </body>
+</html>
